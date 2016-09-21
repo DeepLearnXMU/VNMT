@@ -13,12 +13,17 @@ import string
 run = os.system
 path = os.path.dirname(os.path.realpath(__file__))
 
+def split_seg(line):
+    p1 = line.find(">")+1
+    p2 = line.rfind("<")
+    return [ line[:p1], line[p1:p2], line[p2:] ]
+
 def plain2sgm(trg_plain, src_sgm, trg_sgm):
     "Converse plain format to sgm format"
     fin_trg_plain = file(trg_plain , "r")
     fin_src_sgm = file(src_sgm, "r")
     fout = file(trg_sgm, "w")
-    
+
     #head
     doc_head = fin_src_sgm.readline().rstrip().replace("srcset", "tstset")
     if doc_head.find("trglang") == -1 :
@@ -40,7 +45,7 @@ def plain2sgm(trg_plain, src_sgm, trg_sgm):
             print >> fout, "</tstset>"
         else:
             print >> fout, line
-    
+
     fout.close()
     fin_src_sgm.close()
 

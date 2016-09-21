@@ -26,7 +26,7 @@ dict(
     v_dim = 2000,
 
     ### dev setting
-    validFreq = 20,
+    validFreq = 2000,
     dev_record = "bleu.curve.record",
     dev_src = "data/nist_test/nist05/src",
     dev_tgt = "/data/nist05/ref.sgm",
