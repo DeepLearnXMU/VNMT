@@ -22,11 +22,11 @@ To train a good VNMT model, you need follow two steps.
 
 ###  Step 1. Pretraining
 
-Pretrain a good base model using the GroundHog.
+Pretrain a base model using the GroundHog.
 
 ### Step 2. Retraining
 
-Go to the `work` directory, and put the pretrained model to this directory.
+Go to the `work` directory, and put the pretrained model to this directory, i.e. use the pretrained model to initialize the parameters of VNMT.
 
 Simply Run (Clearly, before that you need re-config the `chinese.py` file to your own dataset :))
 ```
@@ -34,6 +34,6 @@ run.sh
 ```
 That's it!
 
-*Notice that our test and deveopment set is the NIST dataset, which follow the `sgm` format!*
+*Notice that our test and deveopment set is the NIST dataset, which follow the `sgm` format! Please see the `work/data/dev` for example.*
 
 For any comments or questions, please email <a href="mailto:zb@stu.xmu.edu.cn">Biao Zhang</a>.
