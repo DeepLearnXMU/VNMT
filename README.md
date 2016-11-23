@@ -4,11 +4,16 @@ Source code for variational neural machine translation, we will make it availabl
 
 If you use this code, please cite our paper:
 ```
-@InProceedings{Zhang:EMNLP:2016:VNMT,
-  author    = {Biao Zhang, Deyi Xiong, Jinsong Su, Hong Duan and Min Zhang},
+@InProceedings{zhang-EtAl:2016:EMNLP20162,
+  author    = {Zhang, Biao  and  Xiong, Deyi  and  su, jinsong  and  Duan, Hong  and  Zhang, Min},
   title     = {Variational Neural Machine Translation},
-  booktitle = {Proc. of EMNLP},
+  booktitle = {Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing},
+  month     = {November},
   year      = {2016},
+  address   = {Austin, Texas},
+  publisher = {Association for Computational Linguistics},
+  pages     = {521--530},
+  url       = {https://aclweb.org/anthology/D16-1050}
 }
 ```
 
