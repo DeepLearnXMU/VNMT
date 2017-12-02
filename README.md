@@ -1,5 +1,7 @@
 # VNMT
 
+*Current implementation for VNMT only support 1 layer NMT! Deep layers are meaningless.*
+
 Source code for variational neural machine translation, we will make it available soon!
 
 If you use this code, please cite <a href="http://www.aclweb.org/anthology/D/D16/D16-1050.pdf">our paper</a>:
